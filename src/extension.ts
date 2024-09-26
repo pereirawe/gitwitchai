@@ -35,7 +35,7 @@ export function activate(context: vscode.ExtensionContext) {
                 await vscode.workspace
                     .getConfiguration()
                     .update(
-                        "openai.token",
+                        "witchai.openai.token",
                         token,
                         vscode.ConfigurationTarget.Global
                     );
@@ -61,7 +61,9 @@ export function activate(context: vscode.ExtensionContext) {
 }
 
 async function verifyOpenAIToken() {
-    const token = vscode.workspace.getConfiguration().get("openai.token");
+    const token = vscode.workspace
+        .getConfiguration()
+        .get("witchai.openai.token");
 
     try {
         const response = await axios.post(
@@ -108,7 +110,9 @@ async function getGitDiff() {
 }
 
 async function generateCommitSummary(diff: string): Promise<string | null> {
-    const token = vscode.workspace.getConfiguration().get("openai.token");
+    const token = vscode.workspace
+        .getConfiguration()
+        .get("witchai.openai.token");
     if (!token) {
         vscode.window.showErrorMessage("OpenAI token is not set!");
         return null;

@@ -30,7 +30,7 @@
       "type": "object",
       "title": "WitchAI Configuration",
       "properties": {
-        "openai.token": {
+        "witchai.openai.token": {
           "type": "string",
           "default": "",
           "description": "The OpenAI API token used for generating commit messages."
