@@ -26,7 +26,7 @@ jobs:
 
             # Step 4: Lint and compile the extension (optional, adjust based on your project)
             - name: Compile the extension
-              run: npm run build # Ensure your package.json has a build script, or adjust as necessary
+              run: npm run compile # Ensure your package.json has a build script, or adjust as necessary
 
             # Step 5: Install VSCE (VS Code Extension Manager)
             - name: Install vsce
