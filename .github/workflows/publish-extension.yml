@@ -8,7 +8,6 @@ on:
 jobs:
     publish-extension:
         runs-on: ubuntu-latest
-        environment: PROD
 
         steps:
             # Step 1: Check out the repository
