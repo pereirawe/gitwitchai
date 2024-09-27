@@ -36,4 +36,4 @@ jobs:
             - name: Publish extension
               env:
                   VSCE_TOKEN: ${{ secrets.VSCE_TOKEN }} # Use the secret created in GitHub
-              run: vsce publish --pat $VSCE_TOKEN
+              run: vsce publish
