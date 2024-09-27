@@ -1,7 +1,8 @@
 {
-  "name": "witchai",
-  "displayName": "WitchAI",
+  "name": "gitwitchai",
+  "displayName": "GitWitchAI",
   "description": "AI for git commit and pull requests message suggestions",
+  "icon": "images/logo_128.jpg",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.93.0"
@@ -14,23 +15,19 @@
   "contributes": {
     "commands": [
       {
-        "command": "witchai.helloWorld",
-        "title": "WitchAi: Hello World"
+        "command": "gitwitchai.setOpenAIToken",
+        "title": "GitWitchAI: Set OpenAI Token"
       },
       {
-        "command": "witchai.setOpenAIToken",
-        "title": "WitchAi: Set OpenAI Token"
-      },
-      {
-        "command": "witchai.commitWithAI",
-        "title": "WitchAi: Commit with AI Summary"
+        "command": "gitwitchai.commitWithAI",
+        "title": "GitWitchAI: Commit with AI Summary"
       }
     ],
     "configuration": {
       "type": "object",
-      "title": "WitchAI Configuration",
+      "title": "GitWitchAI Configuration",
       "properties": {
-        "witchai.openai.token": {
+        "gitwitchai.openai.token": {
           "type": "string",
           "default": "",
           "description": "The OpenAI API token used for generating commit messages."
@@ -58,7 +55,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pereirawe/witchai.git"
+    "url": "https://github.com/pereirawe/gitwitchai.git"
   },
   "devDependencies": {
     "@types/mocha": "^10.0.7",

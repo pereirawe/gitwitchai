@@ -1,6 +1,6 @@
-# WitchAI
+# GitWitchAI
 
-WitchAI is a Visual Studio Code extension that enhances your development workflow by utilizing OpenAI's API to suggest commit messages based on the changes you've made in your project files. 
+GitWitchAI is a Visual Studio Code extension that enhances your development workflow by utilizing OpenAI's API to suggest commit messages based on the changes you've made in your project files.
 
 ## Features
 
@@ -16,3 +16,4 @@ WitchAI is a Visual Studio Code extension that enhances your development workflo
 
    ```bash
    npm install
+   ```
