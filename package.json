@@ -3,6 +3,7 @@
   "displayName": "GitWitchAI",
   "description": "AI for git commit and pull requests message suggestions",
   "icon": "images/logo_128.jpg",
+  "publisher": "pereirawe",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.93.0"
